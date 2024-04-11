@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApiDotnetEstudoAngular")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+81533dbfad4d4dba948f036205f9691da2be3ba1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b3b26da8ea210bd512b54a5526706360d999e89c")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiDotnetEstudoAngular")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiDotnetEstudoAngular")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
