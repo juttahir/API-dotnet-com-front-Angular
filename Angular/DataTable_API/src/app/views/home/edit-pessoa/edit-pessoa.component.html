@@ -1,0 +1,79 @@
+<form [formGroup]="formulario" (ngSubmit)="onSubmit()" class="row">
+    
+    <div class="col-md-12 mb-3 text-center">
+        <div class="form-group row justify-content-center">
+            <h3>Editar nome do jogador</h3>
+            <mat-form-field class="example-full-width style text-center" *ngIf="formulario">
+                <mat-label>ID</mat-label>
+                <input type="text" matInput [value]="" formControlName="id">
+            </mat-form-field>
+        </div>
+    </div>
+    
+    <!-- Primeira linha -->
+    <div class="col-md-12 mb-3 text-center">
+        <div class="form-group row">
+            <div class="col-md-6"> 
+                <mat-form-field class="example-full-width custom-width text-center" *ngIf="formulario">
+                    <mat-label>Nome</mat-label>
+                    <input type="text" matInput formControlName="nome" placeholder="Neymar">
+                </mat-form-field>
+            </div>
+
+            <div class="col-md-6">
+                <mat-form-field class="example-full-width custom-width text-center" *ngIf="formulario">
+                    <mat-label>Idade</mat-label>
+                    <input type="number" matInput formControlName="idade" placeholder="18">
+                </mat-form-field>
+            </div>
+        </div>
+    </div>
+
+    <!-- Segunda linha -->
+    <div class="col-md-12 mb-3 text-center">
+        <div class="form-group row">
+            <div class="col-md-6">
+                <mat-form-field class="example-full-width custom-width text-center" *ngIf="formulario">
+                    <mat-label>Nacionalidade</mat-label>
+                    <input type="text" matInput formControlName="nacionalidade" placeholder="Brasil">
+                </mat-form-field>
+            </div>
+            
+            <div class="col-md-6">
+                <mat-form-field class="example-full-width custom-width text-center" *ngIf="formulario">
+                    <mat-label>Clube Atual</mat-label>
+                    <input type="email" matInput formControlName="clube" placeholder="Santos">
+                </mat-form-field>
+            </div>
+        </div>
+    </div>
+
+    <!-- Terceira linha -->
+    <div class="col-md-10 mb-3 mx-auto text-center">
+        <div class="form-group row justify-content-center">
+            <div class="col-md-4">
+                <mat-form-field class="example-full-width text-center" *ngIf="formulario">
+                    <mat-label>Gols na Carreira</mat-label>
+                    <input type="number" matInput formControlName="gols" placeholder="10">
+                </mat-form-field>
+            </div>
+
+            <div class="col-md-4">
+                <mat-form-field class="example-full-width text-center" *ngIf="formulario">
+                    <mat-label>Jogos na Carreira</mat-label>
+                    <input type="number" matInput formControlName="jogos" placeholder="10">
+                </mat-form-field>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botões -->
+    <div class="col-md-12 d-flex flex-column align-items-center mt-1">
+        <div class="form-group row">
+            <div class="col-md-12">
+                <button type="button" class="btn btn-danger" (click)="fecharModal()">Cancelar</button>
+                <button type="submit" class="btn btn-success" (click)="onConfirm(true)">Enviar</button>
+            </div>
+        </div>
+    </div>
+</form>
