@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "a149FPHkcRSYa45IES9A/QgE6BZM83kcJaWyWa0manQfKBgEchXUt+4ItotBvcQ3c6hygt+tekgUkl3uO8XQZg==",
+  "dgSpecHash": "ce/3GuwaVHrB40gvvTS62TqdJSXu3HQGyMgqYSfWWvMZXOLbzyeZ9Pj5/YNIRNEE7TQy1pOTzLzrJ2TIlUW/EQ==",
   "success": true,
-  "projectFilePath": "F:\\_RiderProjects\\API Angular\\ApiDotnetEstudoAngular\\ApiDotnetEstudoAngular.csproj",
+  "projectFilePath": "F:\\_RiderProjects\\API-dotnet-com-front-Angular\\ApiDotnetEstudoAngular\\ApiDotnetEstudoAngular.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jutta\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.3\\microsoft.aspnetcore.openapi.8.0.3.nupkg.sha512",
     "C:\\Users\\jutta\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",

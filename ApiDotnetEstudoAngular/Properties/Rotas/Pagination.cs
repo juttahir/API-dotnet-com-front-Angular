@@ -1,12 +1,13 @@
+using Microsoft.AspNetCore.Mvc;
+using System;
 using ApiDotnetEstudoAngular.Data;
 
-namespace ApiDotnetEstudoAngular.Properties.Rotas;
-
-public static class Pagination
+namespace ApiDotnetEstudoAngular.Properties.Rotas
 {
-    public static void MapPagination(this WebApplication app)
+    public class PaginationController : ControllerBase
     {
-        app.MapGet("/getbypagination", (int page, int quantity) =>
+        [HttpGet("/getbypagination")]
+        public ActionResult GetByPagination(int page, int quantity)
         {
             var pessoas = PessoaData.Pessoas;
             var startIndex = (page - 1) * quantity;
@@ -22,7 +23,7 @@ public static class Pagination
                 PageSize = quantity
             };
 
-            return Results.Ok(result);
-        });
+            return Ok(result);
+        }
     }
 }

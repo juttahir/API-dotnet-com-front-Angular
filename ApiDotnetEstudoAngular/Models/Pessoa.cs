@@ -1,5 +1,4 @@
 using ApiDotnetEstudoAngular.Interfaces;
-using Newtonsoft.Json;
 
 namespace ApiDotnetEstudoAngular.Models;
 

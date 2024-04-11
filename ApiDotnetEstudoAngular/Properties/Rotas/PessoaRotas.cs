@@ -1,70 +1,81 @@
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Linq;
 using ApiDotnetEstudoAngular.Data;
 using ApiDotnetEstudoAngular.Models;
 
-namespace ApiDotnetEstudoAngular.Properties.Rotas;
-
-public static class PessoaRotas
+namespace ApiDotnetEstudoAngular.Properties.Rotas
 {
-    public static void MapPessoaRotas(this WebApplication app)
+    public class PessoaController : ControllerBase
     {
-        app.MapGet("/pessoas", () => PessoaData.Pessoas);
+        [HttpGet("/pessoas")]
+        public ActionResult GetPessoas()
+        {
+            return Ok(PessoaData.Pessoas);
+        }
 
-        app.MapGet("/pessoas/nome/{nome}",
-            (string nome) => PessoaData.Pessoas.Find(x => x.Nome.StartsWith(nome)));
+        [HttpGet("/pessoas/nome/{nome}")]
+        public ActionResult GetPessoaByNome(string nome)
+        {
+            var pessoa = PessoaData.Pessoas.FirstOrDefault(x => x.Nome.StartsWith(nome));
+            if (pessoa == null)
+                return NotFound();
 
-        app.MapGet("/pessoas/byid/{id}",
-            (string id) => PessoaData.Pessoas.Find(x => x.Id == id));
+            return Ok(pessoa);
+        }
 
-        app.MapPost("/pessoas",
-            (HttpContext request, Pessoa pessoa) =>
+        [HttpGet("/pessoas/byid/{id}")]
+        public ActionResult GetPessoaById(string id)
+        {
+            var pessoa = PessoaData.Pessoas.FirstOrDefault(x => x.Id == id);
+            if (pessoa == null)
+                return NotFound();
+
+            return Ok(pessoa);
+        }
+
+        [HttpPost("/pessoas")]
+        public ActionResult CreatePessoa([FromBody] Pessoa pessoa)
+        {
+            try
             {
-                try
-                {
-                    pessoa = new Pessoa
-                    {
-                        Id = Guid.NewGuid().ToString(),
-                        Nome = pessoa.Nome,
-                        Idade = pessoa.Idade,
-                        Nacionalidade = pessoa.Nacionalidade,
-                        Clube = pessoa.Clube,
-                        Gols = pessoa.Gols,
-                        Jogos = pessoa.Jogos
-                    };
-                    PessoaData.Pessoas.Add(pessoa);
-                    return Results.Created($"/pessoas/{pessoa.Id}", pessoa);
-                }
-                catch (Exception ex)
-                {
-                    return Results.BadRequest($"Erro durante o processamento da solicitação: {ex.Message}");
-                }
-            });
-       
-        app.MapPut("/pessoa/update/{id}", (string id, Pessoa pessoa) =>
-        {
-            var encontrado = PessoaData.Pessoas.Find(x => x.Id == id);
-            
-            if(encontrado == null)
-                return Results.NotFound();
-            
-            encontrado.Nome = pessoa.Nome;
-            encontrado.Idade = pessoa.Idade;
-            encontrado.Nacionalidade = pessoa.Nacionalidade;
-            encontrado.Clube = pessoa.Clube;
-            encontrado.Gols = pessoa.Gols;
-            encontrado.Jogos = pessoa.Jogos;
+                pessoa.Id = Guid.NewGuid().ToString();
+                PessoaData.Pessoas.Add(pessoa);
+                return Created($"/pessoas/{pessoa.Id}", pessoa);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"Erro durante o processamento da solicitação: {ex.Message}");
+            }
+        }
 
-            return Results.Ok(encontrado);
-        });
-        
-        app.MapDelete("/pessoa/{id}", (string id) =>
+        [HttpPut("/pessoa/update/{id}")]
+        public ActionResult UpdatePessoa(string id, [FromBody] Pessoa pessoa)
         {
-            var encontrado = PessoaData.Pessoas.Find(x => x.Id == id);
-            
-            if(encontrado == null)
-                return Results.NotFound();
+            var encontrada = PessoaData.Pessoas.FirstOrDefault(x => x.Id == id);
+            if (encontrada == null)
+                return NotFound();
 
-            PessoaData.Pessoas.Remove(encontrado);
-            return Results.Ok(encontrado);
-        });
+            encontrada.Nome = pessoa.Nome;
+            encontrada.Idade = pessoa.Idade;
+            encontrada.Nacionalidade = pessoa.Nacionalidade;
+            encontrada.Clube = pessoa.Clube;
+            encontrada.Gols = pessoa.Gols;
+            encontrada.Jogos = pessoa.Jogos;
+
+            return Ok(encontrada);
+        }
+
+        [HttpDelete("/pessoa/{id}")]
+        public ActionResult DeletePessoa(string id)
+        {
+            var encontrada = PessoaData.Pessoas.FirstOrDefault(x => x.Id == id);
+            if (encontrada == null)
+                return NotFound();
+
+            PessoaData.Pessoas.Remove(encontrada);
+            return Ok(encontrada);
+        }
     }
 }

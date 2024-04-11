@@ -33,3 +33,38 @@ F:\_RiderProjects\API Angular\ApiDotnetEstudoAngular\obj\Debug\net8.0\ApiDotnetE
 F:\_RiderProjects\API Angular\ApiDotnetEstudoAngular\obj\Debug\net8.0\ref\ApiDotnetEstudoAngular.dll
 F:\_RiderProjects\API Angular\ApiDotnetEstudoAngular\bin\Debug\net8.0\Newtonsoft.Json.dll
 F:\_RiderProjects\API Angular\ApiDotnetEstudoAngular\obj\Debug\net8.0\ApiDotnetEstudoAngular.sourcelink.json
+F:\_RiderProjects\API-dotnet-com-front-Angular\ApiDotnetEstudoAngular\bin\Debug\net8.0\appsettings.Development.json
+F:\_RiderProjects\API-dotnet-com-front-Angular\ApiDotnetEstudoAngular\bin\Debug\net8.0\appsettings.json
+F:\_RiderProjects\API-dotnet-com-front-Angular\ApiDotnetEstudoAngular\bin\Debug\net8.0\ApiDotnetEstudoAngular.exe
+F:\_RiderProjects\API-dotnet-com-front-Angular\ApiDotnetEstudoAngular\bin\Debug\net8.0\ApiDotnetEstudoAngular.deps.json
+F:\_RiderProjects\API-dotnet-com-front-Angular\ApiDotnetEstudoAngular\bin\Debug\net8.0\ApiDotnetEstudoAngular.runtimeconfig.json
+F:\_RiderProjects\API-dotnet-com-front-Angular\ApiDotnetEstudoAngular\bin\Debug\net8.0\ApiDotnetEstudoAngular.dll
+F:\_RiderProjects\API-dotnet-com-front-Angular\ApiDotnetEstudoAngular\bin\Debug\net8.0\ApiDotnetEstudoAngular.pdb
+F:\_RiderProjects\API-dotnet-com-front-Angular\ApiDotnetEstudoAngular\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
+F:\_RiderProjects\API-dotnet-com-front-Angular\ApiDotnetEstudoAngular\bin\Debug\net8.0\Microsoft.OpenApi.dll
+F:\_RiderProjects\API-dotnet-com-front-Angular\ApiDotnetEstudoAngular\bin\Debug\net8.0\Newtonsoft.Json.dll
+F:\_RiderProjects\API-dotnet-com-front-Angular\ApiDotnetEstudoAngular\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+F:\_RiderProjects\API-dotnet-com-front-Angular\ApiDotnetEstudoAngular\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\_RiderProjects\API-dotnet-com-front-Angular\ApiDotnetEstudoAngular\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\_RiderProjects\API-dotnet-com-front-Angular\ApiDotnetEstudoAngular\obj\Debug\net8.0\ApiDotnetEstudoAngular.csproj.AssemblyReference.cache
+F:\_RiderProjects\API-dotnet-com-front-Angular\ApiDotnetEstudoAngular\obj\Debug\net8.0\ApiDotnetEstudoAngular.GeneratedMSBuildEditorConfig.editorconfig
+F:\_RiderProjects\API-dotnet-com-front-Angular\ApiDotnetEstudoAngular\obj\Debug\net8.0\ApiDotnetEstudoAngular.AssemblyInfoInputs.cache
+F:\_RiderProjects\API-dotnet-com-front-Angular\ApiDotnetEstudoAngular\obj\Debug\net8.0\ApiDotnetEstudoAngular.AssemblyInfo.cs
+F:\_RiderProjects\API-dotnet-com-front-Angular\ApiDotnetEstudoAngular\obj\Debug\net8.0\ApiDotnetEstudoAngular.csproj.CoreCompileInputs.cache
+F:\_RiderProjects\API-dotnet-com-front-Angular\ApiDotnetEstudoAngular\obj\Debug\net8.0\ApiDotnetEstudoAngular.MvcApplicationPartsAssemblyInfo.cs
+F:\_RiderProjects\API-dotnet-com-front-Angular\ApiDotnetEstudoAngular\obj\Debug\net8.0\ApiDotnetEstudoAngular.MvcApplicationPartsAssemblyInfo.cache
+F:\_RiderProjects\API-dotnet-com-front-Angular\ApiDotnetEstudoAngular\obj\Debug\net8.0\ApiDotnetEstudoAngular.sourcelink.json
+F:\_RiderProjects\API-dotnet-com-front-Angular\ApiDotnetEstudoAngular\obj\Debug\net8.0\staticwebassets.build.json
+F:\_RiderProjects\API-dotnet-com-front-Angular\ApiDotnetEstudoAngular\obj\Debug\net8.0\staticwebassets.development.json
+F:\_RiderProjects\API-dotnet-com-front-Angular\ApiDotnetEstudoAngular\obj\Debug\net8.0\staticwebassets\msbuild.ApiDotnetEstudoAngular.Microsoft.AspNetCore.StaticWebAssets.props
+F:\_RiderProjects\API-dotnet-com-front-Angular\ApiDotnetEstudoAngular\obj\Debug\net8.0\staticwebassets\msbuild.build.ApiDotnetEstudoAngular.props
+F:\_RiderProjects\API-dotnet-com-front-Angular\ApiDotnetEstudoAngular\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ApiDotnetEstudoAngular.props
+F:\_RiderProjects\API-dotnet-com-front-Angular\ApiDotnetEstudoAngular\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ApiDotnetEstudoAngular.props
+F:\_RiderProjects\API-dotnet-com-front-Angular\ApiDotnetEstudoAngular\obj\Debug\net8.0\staticwebassets.pack.json
+F:\_RiderProjects\API-dotnet-com-front-Angular\ApiDotnetEstudoAngular\obj\Debug\net8.0\scopedcss\bundle\ApiDotnetEstudoAngular.styles.css
+F:\_RiderProjects\API-dotnet-com-front-Angular\ApiDotnetEstudoAngular\obj\Debug\net8.0\ApiDotne.93DEBF49.Up2Date
+F:\_RiderProjects\API-dotnet-com-front-Angular\ApiDotnetEstudoAngular\obj\Debug\net8.0\ApiDotnetEstudoAngular.dll
+F:\_RiderProjects\API-dotnet-com-front-Angular\ApiDotnetEstudoAngular\obj\Debug\net8.0\refint\ApiDotnetEstudoAngular.dll
+F:\_RiderProjects\API-dotnet-com-front-Angular\ApiDotnetEstudoAngular\obj\Debug\net8.0\ApiDotnetEstudoAngular.pdb
+F:\_RiderProjects\API-dotnet-com-front-Angular\ApiDotnetEstudoAngular\obj\Debug\net8.0\ApiDotnetEstudoAngular.genruntimeconfig.cache
+F:\_RiderProjects\API-dotnet-com-front-Angular\ApiDotnetEstudoAngular\obj\Debug\net8.0\ref\ApiDotnetEstudoAngular.dll

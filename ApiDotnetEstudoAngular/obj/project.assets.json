@@ -509,11 +509,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\_RiderProjects\\API Angular\\ApiDotnetEstudoAngular\\ApiDotnetEstudoAngular.csproj",
+      "projectUniqueName": "F:\\_RiderProjects\\API-dotnet-com-front-Angular\\ApiDotnetEstudoAngular\\ApiDotnetEstudoAngular.csproj",
       "projectName": "ApiDotnetEstudoAngular",
-      "projectPath": "F:\\_RiderProjects\\API Angular\\ApiDotnetEstudoAngular\\ApiDotnetEstudoAngular.csproj",
+      "projectPath": "F:\\_RiderProjects\\API-dotnet-com-front-Angular\\ApiDotnetEstudoAngular\\ApiDotnetEstudoAngular.csproj",
       "packagesPath": "C:\\Users\\jutta\\.nuget\\packages\\",
-      "outputPath": "F:\\_RiderProjects\\API Angular\\ApiDotnetEstudoAngular\\obj\\",
+      "outputPath": "F:\\_RiderProjects\\API-dotnet-com-front-Angular\\ApiDotnetEstudoAngular\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jutta\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -579,7 +579,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,10 +1,7 @@
-using ApiDotnetEstudoAngular.Properties.Rotas;
-
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
+// Adicione os serviços ao contêiner.
+builder.Services.AddControllers();
 builder.Services.AddSwaggerGen();
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddCors(option =>
@@ -17,7 +14,7 @@ builder.Services.AddCors(option =>
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Configure o pipeline de solicitação HTTP.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -26,7 +23,9 @@ if (app.Environment.IsDevelopment())
 
 // app.UseHttpsRedirection();
 app.UseCors();
-app.MapPessoaRotas();
-app.MapPagination();
+app.UseRouting();
+
+// Mapeia as controllers
+app.MapControllers();
 
 app.Run();
