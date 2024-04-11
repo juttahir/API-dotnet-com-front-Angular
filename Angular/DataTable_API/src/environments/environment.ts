@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   
-  baseUrl:    'http://localhost:5126',
+  baseUrl: 'http://localhost:5126',
 
   interval: 3000
 };
